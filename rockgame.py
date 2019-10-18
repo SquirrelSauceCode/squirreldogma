@@ -45,4 +45,7 @@ while wins < 5 and losses < 5:
 		print(winner, ' won! ', 'The computer chose ', computer_choice, '.', ' The user chose ', user_choice, '. Try again next time!')
 		print("Wins:", wins)
 		print("Losses:", losses)
-
+if wins == 5:
+	print("Congratulations!!! You bested the computer")
+else:
+	print("Aww the computer won this time, try again for another chance to win"
