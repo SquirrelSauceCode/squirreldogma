@@ -4,22 +4,16 @@ import random
 winner = ''
 wins = 0
 losses = 0
+choices = ['rock', 'paper', 'scissors']
+
 print("Rock, Paper Scissors! First to 5 wins")
 
 #Makes the computer choose a random option
 while wins < 5 and losses < 5:
-	random_choice = random.randint(0,2)
-	if random_choice == 0:
-		computer_choice = 'rock'
-	elif random_choice == 1:
-		computer_choice = 'paper'
-	else:
-		computer_choice = 'scissors'
+	computer_choice = random.choice(choices)
 	#asks the user for an option if invalid reprompts
 	user_choice = ''
-	while (user_choice != 'rock' and
-		user_choice != 'paper' and
-		user_choice != 'scissors'):
+	while (user_choice not in choices):
 		user_choice = input('rock, paper, or scissors? ')
 	#Decides who wins
 	if user_choice == computer_choice:
