@@ -48,4 +48,4 @@ while wins < 5 and losses < 5:
 if wins == 5:
 	print("Congratulations!!! You bested the computer")
 else:
-	print("Aww the computer won this time, try again for another chance to win"
+	print("Aww the computer won this time, try again for another chance to win")
